@@ -1,0 +1,26 @@
+BOL SACHILE AI — PWA V1.0 (SIMULACIÓN)
+
+INICIO LOCAL (PC con Python):
+1. Descomprime esta carpeta.
+2. Abre PowerShell dentro de ella.
+3. Ejecuta: py -m http.server 8080
+4. Abre: http://localhost:8080
+
+INSTALAR EN ANDROID:
+Para instalar como PWA desde Chrome Android, publica los archivos en un hosting HTTPS estático (por ejemplo GitHub Pages o Cloudflare Pages), abre la URL en Chrome y usa «Añadir a pantalla de inicio» / «Instalar aplicación».
+Abrir index.html directamente como archivo no habilita correctamente el service worker ni la instalación PWA.
+
+CARACTERÍSTICAS:
+- Interfaz adaptada a móvil; almacenamiento local.
+- Capital inicial 50.000 CLP, editable; 0,5 % de comisión por operación (supuesto).
+- Datos de demostración completamente SINTÉTICOS, no cotizaciones reales.
+- Importación de CSV: fecha,cierre,volumen con fecha AAAA-MM-DD, cierre numérico en CLP, punto decimal, separador coma o punto y coma.
+- Cruce de SMA10/SMA30; entrada al cierre siguiente (aproximación), salida por cruce contrario o por 20 sesiones; tope de 40 sesiones.
+- Solo una posición; compra de unidades enteras, hasta 40 % del efectivo.
+- Simulación histórica, cartera, exportación de resultados.
+
+LIMITACIONES:
+No hay integración con proveedores de precios reales, ni actualizaciones automáticas, ni servidor cloud, ni notificaciones push. Los resultados son backtests dentro de muestra, no validaciones predictivas. No se consideran spread, deslizamiento, impuestos ni liquidez. Las señales no son recomendaciones de inversión. Los datos se almacenan en el navegador y pueden borrarse al limpiar sus datos.
+
+PRÓXIMA ETAPA:
+Publicar en HTTPS y conectar backend de datos autorizado, ejecución programada y evaluación fuera de muestra.
