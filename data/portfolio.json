@@ -1,0 +1,11 @@
+{
+  "mode": "virtual",
+  "initial_capital_clp": 50000.0,
+  "cash": 50000.0,
+  "positions": [],
+  "trades": [],
+  "last_processed_date": "2026-11-13",
+  "equity_clp": 50000.0,
+  "return_pct": 0.0,
+  "updated_at": "2026-11-13 14:29:12 UTC"
+}

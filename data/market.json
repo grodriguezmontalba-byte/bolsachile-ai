@@ -1,140 +1,542 @@
 {
-  "updated_at": "2026-11-13 14:21:11",
-  "source": "Yahoo Finance vía yfinance (fuente no oficial)",
+  "updated_at": "2026-11-13 14:29:12",
+  "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
-  "initial_capital_clp": 50000,
-  "method": "Tendencia MA20/MA60; evaluación cronológica exploratoria, 20 sesiones",
-  "disclaimer": "No son probabilidades predictivas. Sin ejecución real, comisiones ni spread.",
+  "initial_capital_clp": 50000.0,
+  "method": "MA20/MA60, prueba cronológica 40%, 5/10/20/40 sesiones; costos supuestos",
+  "assumed_fee_per_side": 0.003,
+  "assumed_spread_roundtrip": 0.002,
+  "disclaimer": "Resultados exploratorios, no probabilidades predictivas ni órdenes reales. Datos sin verificación secundaria.",
   "actions": [
     {
       "symbol": "SQM-B",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 54900.0,
-      "signal": "Tendencia débil; esperar",
-      "samples": 5,
-      "hit_rate": null,
+      "close": 54939.0,
+      "signal": "Esperar / sin entrada",
+      "samples": 14,
+      "hit_rate": 0.428571,
       "horizon_sessions": 20,
-      "median_return": 0.18075,
+      "median_return": -0.031484,
+      "horizons": {
+        "5": {
+          "samples": 24,
+          "hit_rate": 0.375,
+          "median_return": -0.026158,
+          "mean_return": -0.017545,
+          "worst_return": -0.12536,
+          "benchmark_return": -0.009545,
+          "eligible": false
+        },
+        "10": {
+          "samples": 21,
+          "hit_rate": 0.285714,
+          "median_return": -0.041954,
+          "mean_return": -0.036137,
+          "worst_return": -0.204926,
+          "benchmark_return": -0.028137,
+          "eligible": false
+        },
+        "20": {
+          "samples": 14,
+          "hit_rate": 0.428571,
+          "median_return": -0.031484,
+          "mean_return": -0.03525,
+          "worst_return": -0.222629,
+          "benchmark_return": -0.02725,
+          "eligible": false
+        },
+        "40": {
+          "samples": 12,
+          "hit_rate": 0.333333,
+          "median_return": -0.075753,
+          "mean_return": -0.054811,
+          "worst_return": -0.303851,
+          "benchmark_return": -0.046811,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "SQM-B.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "FALABELLA",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 6708.0,
+      "close": 6730.0,
       "signal": "Tendencia alcista; observar",
-      "samples": 9,
-      "hit_rate": null,
+      "samples": 23,
+      "hit_rate": 0.695652,
       "horizon_sessions": 20,
-      "median_return": 0.04542,
+      "median_return": 0.024609,
+      "horizons": {
+        "5": {
+          "samples": 39,
+          "hit_rate": 0.384615,
+          "median_return": -0.004292,
+          "mean_return": -0.002226,
+          "worst_return": -0.086182,
+          "benchmark_return": 0.005774,
+          "eligible": false
+        },
+        "10": {
+          "samples": 32,
+          "hit_rate": 0.59375,
+          "median_return": 0.003342,
+          "mean_return": 0.007787,
+          "worst_return": -0.077519,
+          "benchmark_return": 0.015787,
+          "eligible": false
+        },
+        "20": {
+          "samples": 23,
+          "hit_rate": 0.695652,
+          "median_return": 0.024609,
+          "mean_return": 0.02646,
+          "worst_return": -0.111341,
+          "benchmark_return": 0.03446,
+          "eligible": true
+        },
+        "40": {
+          "samples": 16,
+          "hit_rate": 0.8125,
+          "median_return": 0.042864,
+          "mean_return": 0.043125,
+          "worst_return": -0.058446,
+          "benchmark_return": 0.051125,
+          "eligible": true
+        }
+      },
+      "selected_horizon": 40,
+      "entry_candidate": false,
       "data_ticker": "FALABELLA.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "COPEC",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 6318.5,
-      "signal": "Tendencia débil; esperar",
-      "samples": 7,
-      "hit_rate": null,
+      "close": 6308.700195,
+      "signal": "Esperar / sin entrada",
+      "samples": 18,
+      "hit_rate": 0.388889,
       "horizon_sessions": 20,
-      "median_return": 0.0,
+      "median_return": -0.007925,
+      "horizons": {
+        "5": {
+          "samples": 27,
+          "hit_rate": 0.296296,
+          "median_return": -0.008,
+          "mean_return": -0.014086,
+          "worst_return": -0.080464,
+          "benchmark_return": -0.006086,
+          "eligible": false
+        },
+        "10": {
+          "samples": 24,
+          "hit_rate": 0.208333,
+          "median_return": -0.015771,
+          "mean_return": -0.014808,
+          "worst_return": -0.095449,
+          "benchmark_return": -0.006808,
+          "eligible": false
+        },
+        "20": {
+          "samples": 18,
+          "hit_rate": 0.388889,
+          "median_return": -0.007925,
+          "mean_return": -0.008532,
+          "worst_return": -0.113048,
+          "benchmark_return": -0.000532,
+          "eligible": false
+        },
+        "40": {
+          "samples": 11,
+          "hit_rate": null,
+          "median_return": -0.037103,
+          "mean_return": -0.015791,
+          "worst_return": -0.115391,
+          "benchmark_return": -0.007791,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "COPEC.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "CHILE",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 194.71,
-      "signal": "Sin señal de entrada",
-      "samples": 6,
-      "hit_rate": null,
+      "close": 194.050003,
+      "signal": "Esperar / sin entrada",
+      "samples": 22,
+      "hit_rate": 0.636364,
       "horizon_sessions": 20,
-      "median_return": 0.04758,
+      "median_return": 0.009333,
+      "horizons": {
+        "5": {
+          "samples": 35,
+          "hit_rate": 0.371429,
+          "median_return": -0.006844,
+          "mean_return": -0.000984,
+          "worst_return": -0.054997,
+          "benchmark_return": 0.007016,
+          "eligible": false
+        },
+        "10": {
+          "samples": 29,
+          "hit_rate": 0.482759,
+          "median_return": -0.000793,
+          "mean_return": 0.003894,
+          "worst_return": -0.056934,
+          "benchmark_return": 0.011894,
+          "eligible": false
+        },
+        "20": {
+          "samples": 22,
+          "hit_rate": 0.636364,
+          "median_return": 0.009333,
+          "mean_return": 0.021887,
+          "worst_return": -0.059769,
+          "benchmark_return": 0.029887,
+          "eligible": true
+        },
+        "40": {
+          "samples": 15,
+          "hit_rate": 0.6,
+          "median_return": 0.046555,
+          "mean_return": 0.0407,
+          "worst_return": -0.070662,
+          "benchmark_return": 0.0487,
+          "eligible": true
+        }
+      },
+      "selected_horizon": 40,
+      "entry_candidate": false,
       "data_ticker": "CHILE.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "BSANTANDER",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 80.16,
-      "signal": "Tendencia débil; esperar",
-      "samples": 8,
-      "hit_rate": null,
+      "close": 80.269997,
+      "signal": "Esperar / sin entrada",
+      "samples": 25,
+      "hit_rate": 0.6,
       "horizon_sessions": 20,
-      "median_return": 0.00621,
+      "median_return": 0.01129,
+      "horizons": {
+        "5": {
+          "samples": 34,
+          "hit_rate": 0.470588,
+          "median_return": -0.00455,
+          "mean_return": -0.001223,
+          "worst_return": -0.067859,
+          "benchmark_return": 0.006777,
+          "eligible": false
+        },
+        "10": {
+          "samples": 28,
+          "hit_rate": 0.535714,
+          "median_return": 0.002593,
+          "mean_return": 0.007135,
+          "worst_return": -0.084664,
+          "benchmark_return": 0.015135,
+          "eligible": false
+        },
+        "20": {
+          "samples": 25,
+          "hit_rate": 0.6,
+          "median_return": 0.01129,
+          "mean_return": 0.012445,
+          "worst_return": -0.096524,
+          "benchmark_return": 0.020445,
+          "eligible": true
+        },
+        "40": {
+          "samples": 15,
+          "hit_rate": 0.666667,
+          "median_return": 0.066139,
+          "mean_return": 0.056578,
+          "worst_return": -0.034641,
+          "benchmark_return": 0.064578,
+          "eligible": true
+        }
+      },
+      "selected_horizon": 40,
+      "entry_candidate": false,
       "data_ticker": "BSANTANDER.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "CENCOSUD",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 1799.0,
-      "signal": "Tendencia débil; esperar",
-      "samples": 6,
-      "hit_rate": null,
+      "close": 1809.800049,
+      "signal": "Esperar / sin entrada",
+      "samples": 21,
+      "hit_rate": 0.333333,
       "horizon_sessions": 20,
-      "median_return": -0.05852,
+      "median_return": -0.009222,
+      "horizons": {
+        "5": {
+          "samples": 33,
+          "hit_rate": 0.333333,
+          "median_return": -0.009563,
+          "mean_return": -0.005677,
+          "worst_return": -0.050085,
+          "benchmark_return": 0.002323,
+          "eligible": false
+        },
+        "10": {
+          "samples": 25,
+          "hit_rate": 0.36,
+          "median_return": -0.009609,
+          "mean_return": -0.000134,
+          "worst_return": -0.075308,
+          "benchmark_return": 0.007866,
+          "eligible": false
+        },
+        "20": {
+          "samples": 21,
+          "hit_rate": 0.333333,
+          "median_return": -0.009222,
+          "mean_return": -0.003212,
+          "worst_return": -0.168256,
+          "benchmark_return": 0.004788,
+          "eligible": false
+        },
+        "40": {
+          "samples": 14,
+          "hit_rate": 0.5,
+          "median_return": 0.007637,
+          "mean_return": 0.011529,
+          "worst_return": -0.200308,
+          "benchmark_return": 0.019529,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "CENCOSUD.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "ENELCHILE",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 83.11,
-      "signal": "Sin señal de entrada",
-      "samples": 10,
-      "hit_rate": 0.6,
+      "close": 83.0,
+      "signal": "Esperar / sin entrada",
+      "samples": 24,
+      "hit_rate": 0.416667,
       "horizon_sessions": 20,
-      "median_return": 0.02497,
+      "median_return": -0.003771,
+      "horizons": {
+        "5": {
+          "samples": 40,
+          "hit_rate": 0.325,
+          "median_return": -0.004946,
+          "mean_return": -0.005887,
+          "worst_return": -0.069719,
+          "benchmark_return": 0.002113,
+          "eligible": false
+        },
+        "10": {
+          "samples": 30,
+          "hit_rate": 0.466667,
+          "median_return": -0.003412,
+          "mean_return": 0.000333,
+          "worst_return": -0.097475,
+          "benchmark_return": 0.008333,
+          "eligible": false
+        },
+        "20": {
+          "samples": 24,
+          "hit_rate": 0.416667,
+          "median_return": -0.003771,
+          "mean_return": 0.00162,
+          "worst_return": -0.108926,
+          "benchmark_return": 0.00962,
+          "eligible": false
+        },
+        "40": {
+          "samples": 17,
+          "hit_rate": 0.470588,
+          "median_return": -0.007937,
+          "mean_return": 0.015608,
+          "worst_return": -0.126519,
+          "benchmark_return": 0.023608,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "ENELCHILE.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "CMPC",
       "status": "ok",
       "date": "2026-11-13",
-      "close": 900.0,
-      "signal": "Tendencia débil; esperar",
-      "samples": 2,
-      "hit_rate": null,
+      "close": 897.400024,
+      "signal": "Esperar / sin entrada",
+      "samples": 12,
+      "hit_rate": 0.416667,
       "horizon_sessions": 20,
-      "median_return": -0.02995,
+      "median_return": -0.009309,
+      "horizons": {
+        "5": {
+          "samples": 17,
+          "hit_rate": 0.294118,
+          "median_return": -0.014695,
+          "mean_return": -0.009592,
+          "worst_return": -0.054054,
+          "benchmark_return": -0.001592,
+          "eligible": false
+        },
+        "10": {
+          "samples": 14,
+          "hit_rate": 0.357143,
+          "median_return": -0.022534,
+          "mean_return": -0.007794,
+          "worst_return": -0.084743,
+          "benchmark_return": 0.000206,
+          "eligible": false
+        },
+        "20": {
+          "samples": 12,
+          "hit_rate": 0.416667,
+          "median_return": -0.009309,
+          "mean_return": -0.001775,
+          "worst_return": -0.098253,
+          "benchmark_return": 0.006225,
+          "eligible": false
+        },
+        "40": {
+          "samples": 9,
+          "hit_rate": null,
+          "median_return": -0.040509,
+          "mean_return": -0.01998,
+          "worst_return": -0.188725,
+          "benchmark_return": -0.01198,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "CMPC.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "CAP",
       "status": "ok",
       "date": "2026-11-13",
       "close": 3660.0,
-      "signal": "Tendencia débil; esperar",
-      "samples": 7,
-      "hit_rate": null,
+      "signal": "Esperar / sin entrada",
+      "samples": 16,
+      "hit_rate": 0.25,
       "horizon_sessions": 20,
-      "median_return": -0.01989,
+      "median_return": -0.044197,
+      "horizons": {
+        "5": {
+          "samples": 23,
+          "hit_rate": 0.304348,
+          "median_return": -0.00781,
+          "mean_return": -0.008981,
+          "worst_return": -0.085055,
+          "benchmark_return": -0.000981,
+          "eligible": false
+        },
+        "10": {
+          "samples": 19,
+          "hit_rate": 0.315789,
+          "median_return": -0.025974,
+          "mean_return": -0.013164,
+          "worst_return": -0.159515,
+          "benchmark_return": -0.005164,
+          "eligible": false
+        },
+        "20": {
+          "samples": 16,
+          "hit_rate": 0.25,
+          "median_return": -0.044197,
+          "mean_return": -0.017462,
+          "worst_return": -0.148,
+          "benchmark_return": -0.009462,
+          "eligible": false
+        },
+        "40": {
+          "samples": 13,
+          "hit_rate": 0.307692,
+          "median_return": -0.043755,
+          "mean_return": -0.019572,
+          "worst_return": -0.187224,
+          "benchmark_return": -0.011572,
+          "eligible": false
+        }
+      },
+      "selected_horizon": null,
+      "entry_candidate": false,
       "data_ticker": "CAP.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     },
     {
       "symbol": "ANDINA-B",
       "status": "ok",
-      "date": "2026-11-12",
-      "close": 4770.0,
-      "signal": "Sin señal de entrada",
-      "samples": 7,
-      "hit_rate": null,
+      "date": "2026-11-13",
+      "close": 4770.799805,
+      "signal": "Esperar / sin entrada",
+      "samples": 24,
+      "hit_rate": 0.583333,
       "horizon_sessions": 20,
-      "median_return": 0.02096,
+      "median_return": 0.023517,
+      "horizons": {
+        "5": {
+          "samples": 38,
+          "hit_rate": 0.447368,
+          "median_return": -0.004558,
+          "mean_return": -0.002096,
+          "worst_return": -0.076744,
+          "benchmark_return": 0.005904,
+          "eligible": false
+        },
+        "10": {
+          "samples": 32,
+          "hit_rate": 0.46875,
+          "median_return": -0.007767,
+          "mean_return": -0.000731,
+          "worst_return": -0.091333,
+          "benchmark_return": 0.007269,
+          "eligible": false
+        },
+        "20": {
+          "samples": 24,
+          "hit_rate": 0.583333,
+          "median_return": 0.023517,
+          "mean_return": 0.023034,
+          "worst_return": -0.0749,
+          "benchmark_return": 0.031034,
+          "eligible": true
+        },
+        "40": {
+          "samples": 16,
+          "hit_rate": 0.75,
+          "median_return": 0.042125,
+          "mean_return": 0.045527,
+          "worst_return": -0.088997,
+          "benchmark_return": 0.053527,
+          "eligible": true
+        }
+      },
+      "selected_horizon": 40,
+      "entry_candidate": false,
       "data_ticker": "ANDINA-B.SN",
-      "note": "Datos ajustados según proveedor; resultados sin comisiones ni spread."
+      "note": "Cierres ajustados según Yahoo; ejecución hipotética al cierre siguiente, sin datos intradía."
     }
   ]
 }
