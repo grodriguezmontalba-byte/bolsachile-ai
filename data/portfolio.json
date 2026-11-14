@@ -4,11 +4,11 @@
   "cash": 50000.0,
   "positions": [],
   "trades": [],
-  "last_processed_date": "2026-11-13",
+  "last_processed_date": "2026-11-12",
   "equity_clp": 50000.0,
   "return_pct": 0.0,
-  "updated_at": "2026-11-13 15:34:14 UTC",
+  "updated_at": "2026-11-14 03:27:37 UTC",
   "diagnostics": [
-    "Sesión ya procesada; no se repiten operaciones"
+    "Sin señales de entrada que cumplan todos los filtros"
   ]
 }

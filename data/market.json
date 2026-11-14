@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 15:34:14",
+  "updated_at": "2026-11-14 03:27:37",
   "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
@@ -11,8 +11,8 @@
     {
       "symbol": "SQM-B",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 53506.0,
+      "date": "2026-11-12",
+      "close": 53500.0,
       "signal": "Esperar / sin entrada",
       "samples": 14,
       "hit_rate": 0.428571,
@@ -22,37 +22,37 @@
         "5": {
           "samples": 24,
           "hit_rate": 0.375,
-          "median_return": -0.025981,
-          "mean_return": -0.017437,
+          "median_return": -0.016606,
+          "mean_return": -0.01459,
           "worst_return": -0.124393,
-          "benchmark_return": -0.009545,
+          "benchmark_return": -0.006675,
           "eligible": false
         },
         "10": {
           "samples": 21,
           "hit_rate": 0.285714,
           "median_return": -0.041652,
-          "mean_return": -0.035881,
+          "mean_return": -0.033519,
           "worst_return": -0.203325,
-          "benchmark_return": -0.028137,
+          "benchmark_return": -0.025756,
           "eligible": false
         },
         "20": {
           "samples": 14,
           "hit_rate": 0.428571,
           "median_return": -0.031265,
-          "mean_return": -0.035001,
+          "mean_return": -0.030567,
           "worst_return": -0.220887,
-          "benchmark_return": -0.02725,
+          "benchmark_return": -0.02278,
           "eligible": false
         },
         "40": {
           "samples": 12,
           "hit_rate": 0.333333,
           "median_return": -0.075181,
-          "mean_return": -0.054406,
+          "mean_return": -0.052486,
           "worst_return": -0.301462,
-          "benchmark_return": -0.046811,
+          "benchmark_return": -0.044875,
           "eligible": false
         }
       },
@@ -65,8 +65,8 @@
     {
       "symbol": "FALABELLA",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 6744.899902,
+      "date": "2026-11-12",
+      "close": 6620.0,
       "signal": "Tendencia alcista; observar",
       "samples": 23,
       "hit_rate": 0.695652,
@@ -76,7 +76,7 @@
         "5": {
           "samples": 39,
           "hit_rate": 0.384615,
-          "median_return": -0.004289,
+          "median_return": -0.00429,
           "mean_return": -0.00224,
           "worst_return": -0.085527,
           "benchmark_return": 0.005774,
@@ -85,7 +85,7 @@
         "10": {
           "samples": 32,
           "hit_rate": 0.59375,
-          "median_return": 0.003283,
+          "median_return": 0.003284,
           "mean_return": 0.007693,
           "worst_return": -0.076933,
           "benchmark_return": 0.015787,
@@ -119,8 +119,8 @@
     {
       "symbol": "COPEC",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 6307.899902,
+      "date": "2026-11-12",
+      "close": 6329.0,
       "signal": "Esperar / sin entrada",
       "samples": 18,
       "hit_rate": 0.388889,
@@ -173,8 +173,8 @@
     {
       "symbol": "CHILE",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 194.559998,
+      "date": "2026-11-12",
+      "close": 192.970001,
       "signal": "Esperar / sin entrada",
       "samples": 22,
       "hit_rate": 0.636364,
@@ -227,8 +227,8 @@
     {
       "symbol": "BSANTANDER",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 80.489998,
+      "date": "2026-11-12",
+      "close": 79.5,
       "signal": "Esperar / sin entrada",
       "samples": 25,
       "hit_rate": 0.6,
@@ -281,8 +281,8 @@
     {
       "symbol": "CENCOSUD",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 1820.0,
+      "date": "2026-11-12",
+      "close": 1745.0,
       "signal": "Esperar / sin entrada",
       "samples": 21,
       "hit_rate": 0.333333,
@@ -335,8 +335,8 @@
     {
       "symbol": "ENELCHILE",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 83.360001,
+      "date": "2026-11-12",
+      "close": 84.010002,
       "signal": "Esperar / sin entrada",
       "samples": 24,
       "hit_rate": 0.416667,
@@ -371,12 +371,12 @@
           "eligible": false
         },
         "40": {
-          "samples": 17,
-          "hit_rate": 0.470588,
-          "median_return": -0.007906,
-          "mean_return": 0.01571,
+          "samples": 16,
+          "hit_rate": 0.4375,
+          "median_return": -0.008628,
+          "mean_return": 0.015588,
           "worst_return": -0.125542,
-          "benchmark_return": 0.023868,
+          "benchmark_return": 0.023745,
           "eligible": false
         }
       },
@@ -389,8 +389,8 @@
     {
       "symbol": "CMPC",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 899.0,
+      "date": "2026-11-12",
+      "close": 890.0,
       "signal": "Esperar / sin entrada",
       "samples": 12,
       "hit_rate": 0.416667,
@@ -443,8 +443,8 @@
     {
       "symbol": "CAP",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 3747.399902,
+      "date": "2026-11-12",
+      "close": 3867.5,
       "signal": "Esperar / sin entrada",
       "samples": 16,
       "hit_rate": 0.25,
@@ -497,8 +497,8 @@
     {
       "symbol": "ANDINA-B",
       "status": "ok",
-      "date": "2026-11-13",
-      "close": 4757.799805,
+      "date": "2026-11-12",
+      "close": 4770.0,
       "signal": "Esperar / sin entrada",
       "samples": 24,
       "hit_rate": 0.583333,
@@ -506,12 +506,12 @@
       "median_return": 0.023298,
       "horizons": {
         "5": {
-          "samples": 38,
-          "hit_rate": 0.421053,
-          "median_return": -0.004554,
-          "mean_return": -0.002183,
+          "samples": 37,
+          "hit_rate": 0.432432,
+          "median_return": -0.004661,
+          "mean_return": -0.002241,
           "worst_return": -0.076164,
-          "benchmark_return": 0.005832,
+          "benchmark_return": 0.005773,
           "eligible": false
         },
         "10": {
@@ -519,7 +519,7 @@
           "hit_rate": 0.46875,
           "median_return": -0.007737,
           "mean_return": -0.000757,
-          "worst_return": -0.090637,
+          "worst_return": -0.090638,
           "benchmark_return": 0.007269,
           "eligible": false
         },
