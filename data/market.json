@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 18:31:32",
+  "updated_at": "2026-11-17 05:10:28",
   "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
@@ -11,8 +11,8 @@
     {
       "symbol": "SQM-B",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 51423.0,
+      "date": "2026-11-13",
+      "close": 53500.0,
       "signal": "Esperar / sin entrada",
       "samples": 14,
       "hit_rate": 0.428571,
@@ -65,9 +65,9 @@
     {
       "symbol": "FALABELLA",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 6810.5,
-      "signal": "Tendencia alcista; observar",
+      "date": "2026-11-13",
+      "close": 6580.0,
+      "signal": "Candidato virtual (próxima sesión)",
       "samples": 23,
       "hit_rate": 0.695652,
       "horizon_sessions": 20,
@@ -85,7 +85,7 @@
         "10": {
           "samples": 32,
           "hit_rate": 0.59375,
-          "median_return": 0.003283,
+          "median_return": 0.003284,
           "mean_return": 0.007505,
           "worst_return": -0.076933,
           "benchmark_return": 0.015597,
@@ -111,16 +111,16 @@
         }
       },
       "selected_horizon": 40,
-      "entry_candidate": false,
-      "entry_reason": "No hay cruce alcista nuevo en el último cierre",
+      "entry_candidate": true,
+      "entry_reason": "Señal validada; posible compra virtual en la siguiente sesión disponible",
       "data_ticker": "FALABELLA.SN",
       "note": "Datos ajustados de Yahoo; ejecución virtual aproximada al cierre de la sesión siguiente."
     },
     {
       "symbol": "COPEC",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 6220.0,
+      "date": "2026-11-13",
+      "close": 6250.0,
       "signal": "Esperar / sin entrada",
       "samples": 18,
       "hit_rate": 0.388889,
@@ -173,8 +173,8 @@
     {
       "symbol": "CHILE",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 192.070007,
+      "date": "2026-11-13",
+      "close": 194.399994,
       "signal": "Esperar / sin entrada",
       "samples": 22,
       "hit_rate": 0.636364,
@@ -227,8 +227,8 @@
     {
       "symbol": "BSANTANDER",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 79.5,
+      "date": "2026-11-13",
+      "close": 80.0,
       "signal": "Esperar / sin entrada",
       "samples": 25,
       "hit_rate": 0.6,
@@ -281,8 +281,8 @@
     {
       "symbol": "CENCOSUD",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 1785.800049,
+      "date": "2026-11-13",
+      "close": 1733.400024,
       "signal": "Esperar / sin entrada",
       "samples": 21,
       "hit_rate": 0.380952,
@@ -335,8 +335,8 @@
     {
       "symbol": "ENELCHILE",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 81.800003,
+      "date": "2026-11-13",
+      "close": 81.5,
       "signal": "Esperar / sin entrada",
       "samples": 24,
       "hit_rate": 0.416667,
@@ -389,8 +389,8 @@
     {
       "symbol": "CMPC",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 900.01001,
+      "date": "2026-11-13",
+      "close": 890.0,
       "signal": "Esperar / sin entrada",
       "samples": 12,
       "hit_rate": 0.416667,
@@ -428,7 +428,7 @@
           "samples": 9,
           "hit_rate": null,
           "median_return": -0.040218,
-          "mean_return": -0.019853,
+          "mean_return": -0.019852,
           "worst_return": -0.187253,
           "benchmark_return": -0.01198,
           "eligible": false
@@ -443,8 +443,8 @@
     {
       "symbol": "CAP",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 3520.0,
+      "date": "2026-11-13",
+      "close": 3844.100098,
       "signal": "Esperar / sin entrada",
       "samples": 16,
       "hit_rate": 0.25,
@@ -497,9 +497,9 @@
     {
       "symbol": "ANDINA-B",
       "status": "ok",
-      "date": "2026-11-16",
-      "close": 4802.5,
-      "signal": "Candidato virtual (próxima sesión)",
+      "date": "2026-11-13",
+      "close": 4700.0,
+      "signal": "Esperar / sin entrada",
       "samples": 24,
       "hit_rate": 0.583333,
       "horizon_sessions": 20,
@@ -543,8 +543,8 @@
         }
       },
       "selected_horizon": 40,
-      "entry_candidate": true,
-      "entry_reason": "Señal validada; posible compra virtual en la siguiente sesión disponible",
+      "entry_candidate": false,
+      "entry_reason": "No hay cruce alcista nuevo en el último cierre",
       "data_ticker": "ANDINA-B.SN",
       "note": "Datos ajustados de Yahoo; ejecución virtual aproximada al cierre de la sesión siguiente."
     }
