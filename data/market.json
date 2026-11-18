@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 04:38:03",
+  "updated_at": "2026-11-18 12:51:16",
   "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
@@ -11,7 +11,7 @@
     {
       "symbol": "SQM-B",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 53550.0,
       "signal": "Esperar / sin entrada",
       "samples": 14,
@@ -65,7 +65,7 @@
     {
       "symbol": "FALABELLA",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 6800.0,
       "signal": "Tendencia alcista; observar",
       "samples": 23,
@@ -74,12 +74,12 @@
       "median_return": 0.024381,
       "horizons": {
         "5": {
-          "samples": 39,
-          "hit_rate": 0.384615,
-          "median_return": -0.00429,
-          "mean_return": -0.00224,
+          "samples": 40,
+          "hit_rate": 0.4,
+          "median_return": -0.00388,
+          "mean_return": -0.001709,
           "worst_return": -0.085527,
-          "benchmark_return": 0.005774,
+          "benchmark_return": 0.00631,
           "eligible": false
         },
         "10": {
@@ -119,7 +119,7 @@
     {
       "symbol": "COPEC",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 6275.0,
       "signal": "Esperar / sin entrada",
       "samples": 18,
@@ -173,7 +173,7 @@
     {
       "symbol": "CHILE",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 195.0,
       "signal": "Esperar / sin entrada",
       "samples": 22,
@@ -227,7 +227,7 @@
     {
       "symbol": "BSANTANDER",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 80.5,
       "signal": "Esperar / sin entrada",
       "samples": 25,
@@ -281,7 +281,7 @@
     {
       "symbol": "CENCOSUD",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 1848.900024,
       "signal": "Esperar / sin entrada",
       "samples": 21,
@@ -320,7 +320,7 @@
           "samples": 13,
           "hit_rate": 0.538462,
           "median_return": 0.01821,
-          "mean_return": 0.009454,
+          "mean_return": 0.009453,
           "worst_return": -0.198744,
           "benchmark_return": 0.017562,
           "eligible": false
@@ -335,7 +335,7 @@
     {
       "symbol": "ENELCHILE",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 82.050003,
       "signal": "Esperar / sin entrada",
       "samples": 24,
@@ -389,7 +389,7 @@
     {
       "symbol": "CMPC",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 890.0,
       "signal": "Esperar / sin entrada",
       "samples": 12,
@@ -443,7 +443,7 @@
     {
       "symbol": "CAP",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 3643.300049,
       "signal": "Esperar / sin entrada",
       "samples": 16,
@@ -497,7 +497,7 @@
     {
       "symbol": "ANDINA-B",
       "status": "ok",
-      "date": "2026-11-16",
+      "date": "2026-11-17",
       "close": 4799.0,
       "signal": "Tendencia alcista; observar",
       "samples": 24,
@@ -548,5 +548,18 @@
       "data_ticker": "ANDINA-B.SN",
       "note": "Datos ajustados de Yahoo; ejecución virtual aproximada al cierre de la sesión siguiente."
     }
-  ]
+  ],
+  "latest_close_date": "2026-11-17",
+  "data_dates_by_symbol": {
+    "SQM-B": "2026-11-17",
+    "FALABELLA": "2026-11-17",
+    "COPEC": "2026-11-17",
+    "CHILE": "2026-11-17",
+    "BSANTANDER": "2026-11-17",
+    "CENCOSUD": "2026-11-17",
+    "ENELCHILE": "2026-11-17",
+    "CMPC": "2026-11-17",
+    "CAP": "2026-11-17",
+    "ANDINA-B": "2026-11-17"
+  }
 }

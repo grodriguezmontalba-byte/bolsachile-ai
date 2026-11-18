@@ -1,19 +1,35 @@
 {
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
-  "cash": 50000.0,
-  "positions": [],
-  "trades": [],
-  "last_processed_date": "2026-11-16",
-  "equity_clp": 50000.0,
-  "return_pct": 0.0,
-  "updated_at": "2026-11-18 04:38:03 UTC",
-  "diagnostics": [
-    "ANDINA-B: señal pendiente de la siguiente sesión"
+  "cash": 35545.3688,
+  "positions": [
+    {
+      "symbol": "ANDINA-B",
+      "shares": 3,
+      "entry_price": 4803.799,
+      "last_price": 4799.0,
+      "entry_date": "2026-11-17",
+      "last_mark_date": "2026-11-17",
+      "elapsed_sessions": 0,
+      "horizon_sessions": 40
+    }
   ],
-  "pending_entry": {
-    "symbol": "ANDINA-B",
-    "signal_date": "2026-11-16",
-    "horizon_sessions": 40
-  }
+  "trades": [
+    {
+      "date": "2026-11-17",
+      "symbol": "ANDINA-B",
+      "side": "BUY",
+      "shares": 3,
+      "price": 4803.799,
+      "cash_change": -14454.631191,
+      "note": "Compra virtual al cierre disponible posterior a señal"
+    }
+  ],
+  "last_processed_date": "2026-11-17",
+  "equity_clp": 49942.3688,
+  "return_pct": -0.115262,
+  "updated_at": "2026-11-18 12:51:16 UTC",
+  "diagnostics": [
+    "ANDINA-B: compra virtual de 3 acción(es)"
+  ]
 }
