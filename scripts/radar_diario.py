@@ -1,10 +1,9 @@
-
 #!/usr/bin/env python3
-"""BolsaChile AI V1.3: radar y cartera exclusivamente virtual."""
+"""BolsaChile AI V1.3.1: radar virtual con diagnóstico de frescura."""
 
 import json
 import math
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import numpy as np
@@ -89,11 +88,11 @@ def signals(df):
 
     bullish = (c > ma20) & (ma20 > ma60)
 
-    entry = bullish & (
-        ~bullish.shift(1).fillna(False).astype(bool)
-    )
+    # Evita el FutureWarning de pandas sin alterar la señal calculada.
+    previous = bullish.shift(1, fill_value=False)
+    entry = bullish & ~previous
 
-    return bullish.fillna(False), entry.fillna(False)
+    return bullish, entry
 
 
 def evaluate(df, entry, h):
@@ -296,6 +295,32 @@ def simulate(portfolio, actions, histories):
 
     current = max(dates)
     diagnostics = []
+
+    # Los datos pueden estar atrasados aunque la descarga haya sido exitosa.
+    # Se informa, sin inventar cotizaciones ni forzar compras.
+    today_utc = datetime.now(timezone.utc).date()
+    latest_date = datetime.strptime(current, "%Y-%m-%d").date()
+    business_days_lag = sum(
+        (latest_date + timedelta(days=i)).weekday() < 5
+        for i in range(1, max(0, (today_utc - latest_date).days) + 1)
+    )
+    if business_days_lag >= 2:
+        diagnostics.append(
+            f"ATENCIÓN: último cierre descargado {current}; "
+            f"{business_days_lag} días hábiles de diferencia con UTC. "
+            "Verificar retraso de Yahoo Finance y horario del workflow"
+        )
+
+    previous_date = portfolio.get("last_processed_date")
+    if previous_date and current < previous_date:
+        portfolio["diagnostics"] = diagnostics + [
+            f"Datos retrocedieron de {previous_date} a {current}; "
+            "se conserva la cartera sin procesar operaciones"
+        ]
+        portfolio["updated_at"] = datetime.now(timezone.utc).strftime(
+            "%Y-%m-%d %H:%M:%S UTC"
+        )
+        return portfolio
 
     already_processed = (
         portfolio.get("last_processed_date") == current
@@ -607,7 +632,15 @@ def main():
             "Simulación educativa; resultados "
             "exploratorios, no probabilidades predictivas."
         ),
-        "actions": actions
+        "actions": actions,
+        "latest_close_date": max(
+            (a["date"] for a in actions if a["status"] == "ok"),
+            default=None
+        ),
+        "data_dates_by_symbol": {
+            a["symbol"]: a["date"]
+            for a in actions if a["status"] == "ok"
+        }
     }
 
     (DATA / "market.json").write_text(
@@ -638,6 +671,13 @@ def main():
         ),
         "| Operaciones acumuladas:",
         len(portfolio["trades"])
+    )
+
+    print(
+        "Último cierre disponible:",
+        payload["latest_close_date"],
+        "| Fecha UTC de ejecución:",
+        datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     )
 
     print(
