@@ -28,8 +28,9 @@
   "last_processed_date": "2026-11-17",
   "equity_clp": 49942.3688,
   "return_pct": -0.115262,
-  "updated_at": "2026-11-18 12:51:16 UTC",
+  "updated_at": "2026-11-19 04:21:34 UTC",
   "diagnostics": [
-    "ANDINA-B: compra virtual de 3 acción(es)"
+    "ATENCIÓN: último cierre descargado 2026-11-17; 2 días hábiles de diferencia con UTC. Verificar retraso de Yahoo Finance y horario del workflow",
+    "Sesión ya procesada; no se repiten operaciones"
   ]
 }
