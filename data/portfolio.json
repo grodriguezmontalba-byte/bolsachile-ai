@@ -28,6 +28,9 @@
   "last_processed_date": "2026-11-19",
   "equity_clp": 49794.169094,
   "return_pct": -0.411662,
-  "updated_at": "2026-11-19 18:13:46 UTC",
-  "diagnostics": []
+  "updated_at": "2026-11-20 04:09:11 UTC",
+  "diagnostics": [
+    "ATENCIÓN: último cierre descargado 2026-11-18; 2 días hábiles de diferencia con UTC. Verificar retraso de Yahoo Finance y horario del workflow",
+    "Datos retrocedieron de 2026-11-19 a 2026-11-18; se conserva la cartera sin procesar operaciones"
+  ]
 }
