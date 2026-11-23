@@ -4,8 +4,9 @@ name: BolsaChile radar diario virtual
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 13 * * 1-6'
-    - cron: '30 17 * * 1-6'
+    - cron: '17 13 * * 1-6'
+    - cron: '43 17 * * 1-6'
+    - cron: '23 20 * * 1-6'
 
 permissions:
   contents: write
