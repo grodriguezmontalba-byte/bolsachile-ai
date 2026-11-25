@@ -7,10 +7,10 @@
       "symbol": "ANDINA-B",
       "shares": 3,
       "entry_price": 4803.799,
-      "last_price": 4795.899902,
+      "last_price": 4720.100098,
       "entry_date": "2026-11-17",
-      "last_mark_date": "2026-11-23",
-      "elapsed_sessions": 4,
+      "last_mark_date": "2026-11-24",
+      "elapsed_sessions": 5,
       "horizon_sessions": 40
     }
   ],
@@ -25,11 +25,9 @@
       "note": "Compra virtual al cierre disponible posterior a señal"
     }
   ],
-  "last_processed_date": "2026-11-23",
-  "equity_clp": 49933.068506,
-  "return_pct": -0.133863,
-  "updated_at": "2026-11-24 20:29:43 UTC",
-  "diagnostics": [
-    "Sesión ya procesada; no se repiten operaciones"
-  ]
+  "last_processed_date": "2026-11-24",
+  "equity_clp": 49705.669094,
+  "return_pct": -0.588662,
+  "updated_at": "2026-11-25 13:17:46 UTC",
+  "diagnostics": []
 }
