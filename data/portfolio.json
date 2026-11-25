@@ -28,6 +28,8 @@
   "last_processed_date": "2026-11-24",
   "equity_clp": 49705.669094,
   "return_pct": -0.588662,
-  "updated_at": "2026-11-25 13:17:46 UTC",
-  "diagnostics": []
+  "updated_at": "2026-11-25 17:43:20 UTC",
+  "diagnostics": [
+    "Sesión ya procesada; no se repiten operaciones"
+  ]
 }

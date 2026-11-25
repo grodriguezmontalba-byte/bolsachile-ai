@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 13:17:46",
+  "updated_at": "2026-11-25 17:43:20",
   "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
@@ -428,7 +428,7 @@
           "samples": 9,
           "hit_rate": null,
           "median_return": -0.040218,
-          "mean_return": -0.019853,
+          "mean_return": -0.019852,
           "worst_return": -0.187253,
           "benchmark_return": -0.01198,
           "eligible": false
