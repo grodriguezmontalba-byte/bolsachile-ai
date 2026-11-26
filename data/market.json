@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 17:43:21",
+  "updated_at": "2026-11-26 20:23:14",
   "source": "Yahoo Finance vía yfinance (no oficial)",
   "mode": "virtual",
   "initial_capital_clp": 50000.0,
@@ -85,7 +85,7 @@
         "10": {
           "samples": 32,
           "hit_rate": 0.59375,
-          "median_return": 0.003284,
+          "median_return": 0.003283,
           "mean_return": 0.007505,
           "worst_return": -0.076933,
           "benchmark_return": 0.015597,
@@ -428,7 +428,7 @@
           "samples": 9,
           "hit_rate": null,
           "median_return": -0.040218,
-          "mean_return": -0.019853,
+          "mean_return": -0.019852,
           "worst_return": -0.187253,
           "benchmark_return": -0.01198,
           "eligible": false
@@ -519,7 +519,7 @@
           "hit_rate": 0.46875,
           "median_return": -0.007737,
           "mean_return": -0.000551,
-          "worst_return": -0.090638,
+          "worst_return": -0.090637,
           "benchmark_return": 0.007477,
           "eligible": false
         },
@@ -529,7 +529,7 @@
           "median_return": 0.019704,
           "mean_return": 0.017,
           "worst_return": -0.074335,
-          "benchmark_return": 0.025169,
+          "benchmark_return": 0.025168,
           "eligible": false
         },
         "40": {
